@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&display=swap">
+
+</head>
+<body>
+    
+    <header class="encabezado">
+        <h1 class="logo">NOVIAS JORGUE</h1>
+        
+<nav class="nav">
+    <a href="">HOME</a>
+    <a href="">SUCURSALES</a>
+    <a href="">CONTACTANOS</a>
+    <a href="">OFERTAS</a>
+    <a href="">MAS</a>
+</nav>
+
+<div class="icons">
+    <i class="ri-search-line"></i> 
+    <i class="ri-user-line" href="resgitro.html"></i>
+    <i class="ri-shopping-cart-line"></i>
+</div>
+
+<div class="menu-btn">
+    <i class="ri-menu-line "></i>
+</div>
+
+        
+    </header>
+
+    <!-- script de mi menu -->
+
+    <script>     
+        const menuBtn = document.querySelector('.menu-btn'); // Selecciona el botón
+const nav = document.querySelector('.nav');           // Selecciona la nav
+
+menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active'); // sin punto
+});
+    </script>
+
+    <section class="seccion1">
+        <div class="div2">
+            <h1>VESTIDOS DE NOVIA CORTE PRINCESA</h1>
+            <p>LOS MEJORES VESTIDOS Y DE LA MAS ALTA CALIDAD</p>
+            <a href="">VER CATALOGO</a>
+        </div>
+    </section>
+
+    <div class="titulo1">
+        <h1>TRENDINGS</h1>
+    </div>
+
+    <section class="seccion2">
+        <div class="div3">
+            <div class="card">
+                <img src="vestido.webp" alt="">
+                <h4>VESTIDOS</h4>
+                <h1>VESTIDOS</h1>
+                <p>COTIZAR</p>
+                <a href="">BUY NOW</a>
+            </div>
+            <div class="card">
+                <img src="anillos.jpeg" alt="">
+                <h4>VESTIDOS</h4>
+                <h1>ARGOLLAS</h1>
+                <p>COTIZAR</p>
+                <a href="">BUY NOW</a>
+            </div>
+            <div class="card">
+                <img src="ramos.webp" alt="">
+                <h4>VESTIDOS</h4>
+                <h1>RAMOS</h1>
+                <p>COTIZAR</p>
+                <a href="">BUY NOW</a>
+            </div>
+            <div class="card">
+                <img src="kitdebaño.jpeg" alt="">
+                <h4>VESTIDOS</h4>
+                <h1>KIT </h1>
+                <p>COTIZAR</p>
+                <a href="">BUY NOW</a>
+            </div>
+            <div class="card">
+                <img src="copas.jpeg" alt="">
+                <h4>VESTIDOS</h4>
+                <h1>COPAS</h1>
+                <p>COTIZAR</p>
+                <a href="">BUY NOW</a>
+            </div>
+            <div class="card">
+                <img src="recuerdos.jpeg" alt="">
+                <h4>VESTIDOS</h4>
+                <h1>RECUERDOS</h1>
+                <p>COTIZAR</p>
+                <a href="">BUY NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion3">
+        <div class="div4">
+            <video loop muted autoplay playsinline class="video">
+                <source src="videodeboda.mp4">
+            </video>
+            <div class="texto-encima">
+                <h1>RECUERDOS INVOLVIDABLES</h1>
+                <p>vive tu momento con novias jorgue</p>
+                <a href="">AGENDAR</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion4">
+        <div class="div5">
+           <div class="contenedor-img">
+    <img src="imgen1.jpg" alt="Vestido de boda">
+    <div class="texto-hover">Elegancia para tu gran día</div>
+</div>
+
+        </div>
+        <div class="texto-a-lado">
+            <h1>DONDE TUS SUEÑOS SE VISTEN DE BLANCO
+            </h1>
+            <p>CREAMOS EL VESTIDO QUE SIEMPRE DESEASTE</p>
+            <a href="">ENVIANOS UN MENSAJE</a>
+        </div>
+    </section>
+
+    <section class="seccion5">
+        <div class="div6">
+            <div class="texto-a-lado2">
+                <h2>Un día único, un vestido perfecto</h2>
+                <p>La magia de tu día comienza con el vestido perfecto</p>
+            </div>
+            <div class="contenedor-img2">
+                <img src="imagen2.jpg" alt="">
+                <div class="texto-hover2">
+                    <h1>Porque cada novia merece sentirse inolvidable</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="carrusel">
+  <div class="carrusel-container">
+    <div class="slide"><img src="ramos.webp" alt=""></div>
+    <div class="slide"><img src="copas.jpeg" alt=""></div>
+    <div class="slide"><img src="anillos.jpeg" alt=""></div>
+     <div class="slide"><img src="ramos.webp" alt=""></div>
+    <div class="slide"><img src="copas.jpeg" alt=""></div>
+    <div class="slide"><img src="anillos.jpeg" alt=""></div>
+  </div>
+
+  <button class="btn prev">❮</button>
+  <button class="btn next">❯</button>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

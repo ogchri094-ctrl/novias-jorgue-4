@@ -1,0 +1,682 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    position: relative;
+    justify-content: space-between;
+
+    background-color: #b9b9b9d7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+body {
+    background-color: #fff;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+.icons  {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+}
+
+.icons i {
+    transition: .5s ease;
+}
+
+.icons i:hover {
+    color: red;
+    transform: translateY(-5px);
+}
+
+.menu-btn {
+    display: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .4s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav a:hover {
+    color: rgba(184, 181, 0, 0.664);
+}
+
+.nav a:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width:900px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #c2c2c2;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .encabezado h1 {
+        font-size: 12px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+
+    }
+
+
+
+    .icons {
+        font-size: 18px;
+    }
+
+    .nav.active {
+        display: flex;
+    } 
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+.seccion1 {
+    background-image: url(vestido-de-novia-con-manga-larga.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+}
+
+.seccion1::before {
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(1px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    content: '';
+}
+
+.seccion1 h1{
+    font-size: 32px;
+    letter-spacing: 10px;
+    color: #fff;
+    text-shadow: 0px 6px 30px rgba(0,0,0,0.6);
+    margin-bottom: 10px;
+     font-family: 'Lora', serif;
+}
+
+
+.seccion1 p {
+    font-size: 20px;
+    color: #fff;
+     font-family: 'Poppins', sans-serif;
+}
+
+.seccion1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: 12px;
+    background-color: #c0bdbd;
+    padding: 12px 24px;
+    transition: .4s ease;
+    font-family: 'puppins',sans-serif;
+}
+
+.seccion1 a:hover {
+    background-color: #000000;
+    box-shadow: 0px 4px 20px rgb(196, 196, 196);
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+.div2 {
+    position: absolute;
+    left: 10%;
+}
+
+@media (max-width:780px) {
+    .seccion1 h1 {
+        font-size: 
+        13px;
+        letter-spacing: 0px;
+        max-width: 170px;
+        text-shadow: 0px 5px 20px rgba(0,0,0,0.45);
+    }
+
+    .seccion1 p {
+       font-size: 9px;
+       display: none;
+    }
+
+    .seccion1 a {
+       font-size: 9px;
+       transform: translateY(-12px);
+       font-family: 'puppins', sans-serif;
+    }
+
+    .seccion1 .div2 {
+    position: absolute; /* permite moverlo */
+    top: 60px;   /* mover arriba/abajo */
+    left: 20px;  /* mover izquierda/derecha */
+}
+}
+
+
+.seccion2 .div3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin-top: 0px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.seccion2 {
+    background-color: #fffcd1;
+}
+
+.seccion2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.seccion2 .card {
+    transition: .5s ease;
+}
+
+.seccion2 .card:hover {
+    transform: translateY(-7px);
+}
+
+.seccion2 h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: -10px;
+}
+
+.seccion2 h1 {
+   font-family: 'puppins', sans-serif;
+   letter-spacing: 4px;
+   margin-bottom: -3px;
+   color: black;
+   font-family: 'lora', serif;
+
+}
+
+.seccion2 p {
+    font-family: 'puppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.seccion2 a {
+    display: inline-block;
+    padding: 10px 23px ;
+    text-decoration: none;
+    color: black;
+    font-family: 'puppins', sans-serif;
+    background-color: rgb(255, 238, 0);
+    font-weight: bold;
+    transition: .4s ease;
+}
+
+.seccion2 a:hover {
+    transform: translateY(-5px);
+    background-color: rgb(182, 182, 0);
+}
+
+@media (max-width:780px) {
+    .seccion2 .div3 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left:0px ;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .seccion2 img {
+        width: 100%;
+        height: 170px;
+    }
+
+    .seccion2 h4 {
+        display: none;
+    }
+
+    .seccion2 h1 {
+        font-size: 18px;
+    }
+    
+    .seccion2 p {
+        letter-spacing: 1px;
+    }
+    
+    .titulo1 {
+        font-size: 9px;
+        margin-top: 12px
+    }
+}
+
+.titulo1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: bold;
+}
+
+
+.seccion3 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+   
+}
+
+.div4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    margin-top: 20px;
+}
+
+.video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); /* capa oscura */
+    backdrop-filter: blur(2px);   /* si quieres blur */
+    z-index: 1;
+}
+
+.texto-encima {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 10%;
+}
+
+.texto-encima h1 {
+    font-family: 'puppins', sans-serif;
+    font-size: 42px;
+    letter-spacing: 10px;
+    color: #fff;
+    margin-bottom: 12px;
+    text-shadow: 0px 4px 20px rgba(0,0,0,0.45);
+}
+
+.texto-encima p {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ccc;
+    font-weight: bold;
+    text-shadow: 0px 4px 20px rgba(0,0,0,0.45);
+}
+
+.texto-encima a {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    background-color: orangered;
+    padding: 17px 60px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-family: 'lora', serif;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.texto-encima a:hover {
+    background-color: red;
+    color: #fff;
+    transform: translateY(-12px);
+}
+
+@media (max-width:780px) {
+    .texto-encima h1 {
+        font-size: 22px;
+        text-shadow: 0px 4px 20px rgba(0,0,0,0.45);
+        letter-spacing: 2px;
+    }
+    .texto-encima p {
+       font-size: 14px;
+       margin-bottom: 1PX;
+       display: none;
+    }
+
+    .texto-encima {
+        position: absolute;
+        top: 26%;
+        left: 4%;
+        text-align: center;
+    }
+
+    .texto-encima a {
+        font-size: 14px;
+        padding: 10px 69px;
+    }
+
+}
+
+.seccion4 {
+    display: flex;
+    justify-content: center
+;    align-items: center;
+    gap: 90px;
+    margin-top: 80px;
+
+   
+}
+
+.seccion4 img {
+    width: 900px;
+    height: 720px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+   
+.contenedor-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor-img img {
+    display: block;
+    
+}
+
+.texto-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    opacity:0;
+    transition: opacity 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.contenedor-img:hover .texto-hover {
+    opacity: 1;
+}
+
+.seccion4 h1 {
+    font-size: 30px;
+    font-family: 'puppins', sans-serif;
+    margin-bottom: 12px;
+}
+
+.seccion4 p {
+    font-family: 'lora', serif;
+    color: #000000;
+    font-weight: bold;
+}
+
+.seccion4 a {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    background: #750000;
+    padding: 20px 40px;
+    border-radius: 12px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.seccion4 a:hover {
+    transform: translateY(-5px);
+    background: #440000;
+}
+
+
+.div6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 150px;
+}
+
+.contenedor-img2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.div6 img {
+    display: block;
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.div6 .texto-a-lado2 h1 {
+    font-size: 37px;
+    font-family: 'puppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.div6 p {
+    font-family: 'lora', serif;
+    font-weight: bold;
+}
+
+.texto-hover2  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.contenedor-img2:hover .texto-hover2 {
+    opacity: 1;
+    border-radius: 20px;
+}
+
+@media (max-width:780px) {
+    .seccion4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .seccion4 img {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .seccion4 .texto-a-lado {
+        margin-top: -80px;
+        
+    }
+
+    .seccion4 .texto-a-lado h1 {
+        font-size: 22px;
+    }
+
+}
+
+.seccion5 h2 {
+    font-size: 44px;
+    font-family: 'lora',serif;
+    margin-bottom: 10px;
+}
+
+@media (max-width:800px) {
+    .div6 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div6 .texto-a-lado2 h2 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .div6 .texto-a-lado2 {
+        margin-top: -100px;
+    }
+
+    .div6 .contenedor-img2 img {
+        height: 330px;
+        object-fit: cover;
+    }
+
+    .div6 .contenedor-img2 {
+        margin-top: -80px;
+    }
+}
+.carrusel {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Contenedor flexible de slides */
+.carrusel-container {
+  display: flex;
+  transition: transform .6s ease;
+  will-change: transform;
+}
+
+/* Cada slide ocupa 100% del ancho del contenedor */
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Botones */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.65);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  font-size: 20px;
+  transition: .2s;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.btn:hover { transform: translateY(-50%) scale(1.05); background: rgba(255,255,255,.9); }
+
+.prev { left: 14px; }
+.next { right: 14px; }
+
+/* Dots */
+.dots {
+  text-align: center;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform .25s, background .25s;
+}
+
+.dot.active {
+  background: #ffb6ce; /* rosita pastel */
+  transform: scale(1.25);
+}
+
+/* Responsive: reducir altura en pantallas pequeñas */
+@media (max-width: 600px) {
+  .slide img { height: 300px; }
+}
